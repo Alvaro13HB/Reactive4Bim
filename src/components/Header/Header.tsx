@@ -1,11 +1,18 @@
+import { SHeader } from "./style";
+
 export function Header(){
     return (
-        <header>
+        <SHeader>
+            <figure>
+                <a href="/index.html">
+                    <img src="../../assets/equip-check-logo.svg" alt="logo"></img> 
+                </a> 
+            </figure>
             <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                </ul>
+                <div> 
+                    <img src="/images/equip-check-dropdown.svg" alt="dropdown"></img>
+                </div>
             </nav>
-        </header>
+        </SHeader>
     )
 }
