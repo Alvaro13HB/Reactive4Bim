@@ -6,10 +6,9 @@ export const Layout = () => {
     return (
         <>
             <ComponentHeader />
-                <SMain>
-                    <Outlet />
-                </SMain>
-            <ComponentHeader />
+            <SMain>
+                <Outlet />
+            </SMain>
         </>
     )
 }

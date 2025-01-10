@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { colors } from "../../styles/GlobalStyle"
 
 export const SHeader = styled.header`
-    background-color: ${colors.primary};
+    background-color: ${colors.black};
     height: 5rem;
     display: flex;
     flex-direction: row;
@@ -13,13 +13,11 @@ export const SHeader = styled.header`
 `
 
 export const SNav = styled.nav`
-    nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--black);
-    }
-    nav div {
+    background-color: ${colors.black};
+    .navitems {
         margin: 0 1rem;
         display: flex;
         align-items: center;
@@ -27,5 +25,5 @@ export const SNav = styled.nav`
         cursor: pointer;
         transition: all 0.4s;
     }
-    nav div:hover {scale: 1.2;}
+    .navitems:hover {scale: 1.2;}
 `
