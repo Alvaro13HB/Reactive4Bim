@@ -4,7 +4,7 @@ export function Header(){
     return (
         <SHeader>
             <figure>
-                <a href="/index.html">
+                <a href="/">
                     <img src="src/assets/equip-check-logo.svg" alt="logo"></img> 
                 </a> 
             </figure>
