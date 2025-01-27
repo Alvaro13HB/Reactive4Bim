@@ -54,4 +54,21 @@ export const SHome = styled.main`
     .bloco3 img {
         border: solid 5px ${colors.primary};
     }
+
+    @media(max-width: 800px){
+        section {
+            align-items: center;
+            display: flex;
+            flex-direction: column; 
+        }   
+        .bloco1 {
+            width: 80%;
+        }
+        .bloco2 {
+            width: 80%;
+        }
+        .bloco3 {
+            width: 80%;
+        }
+    }
 `

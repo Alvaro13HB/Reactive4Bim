@@ -10,9 +10,10 @@ export function Header(){
             </figure>
             <SNav>
                 <nav>
-                    <div className="navitems"> 
-                        <img src="src/assets/equip-check-dropdown.svg" alt="dropdown"></img>
-                    </div>
+                    <ul className="navitems"> 
+                        <li><a href="/login">Login</a></li>
+                        <li><a href="/cadastrar">Cadastrar</a></li>
+                    </ul>
                 </nav>
             </SNav>
         </SHeader>

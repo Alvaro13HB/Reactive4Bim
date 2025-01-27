@@ -10,20 +10,41 @@ export const SHeader = styled.header`
     figure {
         cursor: pointer;
     }
+    @media(max-width: 800px){
+        display: flex;
+        flex-direction: row-reverse;
+    }
 `
 
 export const SNav = styled.nav`
     display: flex;
+    height: 5rem;
     align-items: center;
     justify-content: space-between;
     background-color: ${colors.black};
     .navitems {
+        height: 5rem;
         margin: 0 1rem;
         display: flex;
         align-items: center;
         justify-content: space-around;
         cursor: pointer;
-        transition: all 0.4s;
+        list-style-type: none;
     }
-    .navitems:hover {scale: 1.2;}
+    .navitems a {
+        font-family: 'Big Shoulders Display';
+        font-weight: 700;
+        text-decoration: none;
+        color: ${colors.white};
+    }
+    .navitems li {
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
+        height: 5rem;
+    }
+    .navitems li:hover {
+        background-color: ${colors.primary};
+    }
+
 `

@@ -15,11 +15,13 @@ export const SCard = styled.aside`
     }
 
     a{
+        align-self: flex-end;
         text-decoration: none;
         color: var(--white);
     }
 
-    figure img{
-        max-width: 100%;
+    figure img {
+        max-width: 15rem;
+        max-height: 12.5rem;
     }
 `

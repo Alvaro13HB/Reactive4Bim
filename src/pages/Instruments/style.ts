@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { colors } from "../../styles/GlobalStyle"
 
-export const SEffects = styled.main`
+export const SInstruments = styled.main`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -20,7 +20,7 @@ export const SEffects = styled.main`
         flex-direction: column;
         align-items: center;
         align-content: start;
-        background-color: rgba(217, 97, 97, 0.8);
+        background-color: rgba(171, 18, 18, 0.8);
         border-radius: 15px;
         height: 100%;
         min-width: 15rem;
@@ -41,7 +41,7 @@ export const SEffects = styled.main`
         padding: 2rem;
         align-items: center;
         align-content: start;
-        background-color: rgba(217, 97, 97, 0.8);
+        background-color: rgba(171, 18, 18, 0.8);
         margin: 2rem 2rem 2rem 2rem;
         border-radius: 30px;
         width: 100%;
@@ -94,47 +94,46 @@ export const SEffects = styled.main`
     }
 
     @media(max-width: 1640px){
-    .searchbar{
-        grid-column: 1 / span 4;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
+        .searchbar{
+            grid-column: 1 / span 4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
     }
-}
 
-@media(max-width: 1366px){
-    .searchbar{
-        grid-column: 1 / span 3;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
+    @media(max-width: 1366px){
+        .searchbar{
+            grid-column: 1 / span 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
     }
-}
 
-@media(max-width: 1000px){
-    .searchbar{
-        grid-column: 1 / span 2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
+    @media(max-width: 1000px){
+        .searchbar{
+            grid-column: 1 / span 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
     }
-}
 
-@media(max-width: 800px){
-    header {
-        display: flex;
-        flex-direction: row-reverse;
+    @media(max-width: 800px){
+        header {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .searchbar{
+            grid-column: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
     }
-    .searchbar{
-        grid-column: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-}
-
 `
