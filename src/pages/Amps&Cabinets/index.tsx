@@ -1,30 +1,26 @@
-import { SEffects } from "./style"
+import { SAandC } from "./style"
 import { ComponentCard } from "../../components"
-import { effectsData } from "../../services/dados"
+import { ampsandcabinetsData } from "../../services/dados"
 
-export function Effects(){
+export function AandC(){
     const marcas = [{
-        name: "boss",
-        id: "boss",
-        titulo: "BOSS"
+        name: "hartke",
+        id: "hartke",
+        titulo: "Hartke"
     }, {
-        name: "mxr",
-        id: "mxr",
-        titulo: "MXR"
+        name: "orange",
+        id: "orange",
+        titulo: "Orange"
     }, {
-        name: "ehx",
-        id: "ehx",
-        titulo: "Electro-Harmonix"
-    }, {
-        name: "darkglass",
-        id: "darkglass",
-        titulo: "Darkglass"
+        name: "ampeg",
+        id: "ampeg",
+        titulo: "Ampeg"
     }]
 
     return (
-        <SEffects>
+        <SAandC>
             <section className="esquerdo">
-                <h3>EFFECTS</h3>
+                <h3>AMPS & CABINETS</h3>
                 <aside className="filtros">
                     <p> Filters </p>
                         <h5> Brand </h5>
@@ -46,7 +42,7 @@ export function Effects(){
                     </form>
                 </div>
 
-                { effectsData.map((item) => 
+                { ampsandcabinetsData.map((item) => 
                     <ComponentCard 
                         key={item.id}
                         nome={item.nome}
@@ -54,6 +50,6 @@ export function Effects(){
                     />
                 )}
             </section>
-        </SEffects>
+        </SAandC>
     )
 }

@@ -7,6 +7,6 @@ export default function Loading(){
         loop: true,
         autoplay: true,
     };
-    const { View } = useLottie(options, { height: 600});
+    const { View } = useLottie(options, { height: 50});
     return View;
 }

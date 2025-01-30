@@ -49,3 +49,17 @@ export const instrumentsData = [{
     nome: "Aria Pro II SB-1000",
     image: "src/assets/instruments/aria.png"
 }]
+
+export const ampsandcabinetsData = [{
+    id: 1,
+    nome: "Hartke HD25",
+    image: "src/assets/amps-and-cabinets/hartke.png"
+}, {
+    id:2,
+    nome: "Orange Crush Bass 50",
+    image: "src/assets/amps-and-cabinets/orange.png"
+}, {
+    id: 3,
+    nome: "Ampeg Rocket Bass RB-112",
+    image: "src/assets/amps-and-cabinets/ampeg.png"
+}]

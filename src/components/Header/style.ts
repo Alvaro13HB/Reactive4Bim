@@ -22,7 +22,7 @@ export const SNav = styled.nav`
     align-items: center;
     justify-content: space-between;
     background-color: ${colors.black};
-    .navitems {
+    ul {
         height: 5rem;
         margin: 0 1rem;
         display: flex;
@@ -31,19 +31,27 @@ export const SNav = styled.nav`
         cursor: pointer;
         list-style-type: none;
     }
-    .navitems a {
+    a {
         font-family: 'Big Shoulders Display';
         font-weight: 700;
         text-decoration: none;
         color: ${colors.white};
     }
-    .navitems li {
+    li {
         padding: 0 1rem;
         display: flex;
         align-items: center;
         height: 5rem;
     }
-    .navitems li:hover {
+    li button {
+        font-family: 'Big Shoulders Display';
+        font-weight: 700;
+        font-size: 1rem;
+        color: ${colors.white};
+        background-color: transparent;
+    }
+
+    li:hover {
         background-color: ${colors.primary};
     }
 
